@@ -1,3 +1,26 @@
+<?php
+
+session_start();
+
+$user_level = $_SESSION['user_level'];
+
+if (isset($user_level)){
+  switch ($user_level) {
+      case "admin":
+          header("Location: ../admin/index.php");
+          break;
+        case "coach":
+        header("Location: ../coach/index.php");
+          break;
+        case "mentor":
+        header("Location: ../mentor/index.php");
+          break;
+        case "student":
+        header("Location: ../student/index.php");
+          break;
+        }
+}
+?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -65,7 +88,7 @@
 							<li><a href="#" class="button big">Reedem Access Code</a></li> <li><a href="#" class="button big">Request Access Code</a></li>
 				  </ul>
 				</div>
-					
+
             </section>
 
         </div>

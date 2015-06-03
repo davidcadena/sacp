@@ -1,0 +1,5 @@
+student view of lessons
+fix lesson upload
+
+event system
+user views

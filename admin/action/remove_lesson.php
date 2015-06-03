@@ -8,12 +8,12 @@ if ($_SESSION['user_level'] !== 'admin'){
 
 $lesson_id = $_GET['id'];
 
-include_once('../../../includes/database.php');
+include_once('../../includes/database.php');
 
-if($stmt = $mysqli -> prepare("SELECT vm, video FROM lessons WHERE lesson_id = ?")) {
-    $stmt -> bind_param("s", $lesson_id);
+if($stmt = $mysqli -> prepare("SELECT vm, video FROM lessons WHERE lesson_id=?")) {
+    $stmt -> bind_param("i", $lesson_id);
     $stmt -> execute();
-    $stmt->bind_result($vm, $video);
+    $stmt -> bind_result($vm, $video);
     $stmt -> fetch();
     $stmt -> close();
 }
@@ -23,7 +23,7 @@ unlink("../../lessons/$lesson_id/$video");
 
 
 if($stmt = $mysqli -> prepare("DELETE FROM lessons WHERE lesson_id = ?")) {
-    $stmt -> bind_param("s", $lesson_id);
+    $stmt -> bind_param("i", $lesson_id);
     $stmt -> execute();
     $stmt -> fetch();
     $stmt -> close();
@@ -31,5 +31,5 @@ if($stmt = $mysqli -> prepare("DELETE FROM lessons WHERE lesson_id = ?")) {
 }
 
 
-echo "done, $lesson_id";
+header("Location: ../index.php");
 ?>
