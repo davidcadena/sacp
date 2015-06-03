@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html>
 	<head>
 		<title>SA CyberPatriot</title>
@@ -26,11 +26,11 @@
 
 		<!-- Header -->
 			<header id="header" class="alt skel-layers-fixed">
-				<h1><a href="index.html">SA CyberPatriot</a></h1>
+				<h1><a href="index.php">SA CyberPatriot</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="elements.html">Events</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="events.html">Events</a></li>
 						<li><a href="login/index.php">Log In</a></li>
 					</ul>
 				</nav>
@@ -92,8 +92,8 @@
 						</div>
 						<div class="4u 6u(medium) 12u$(small)">
 							<section class="feature fa-cubes">
-								<h3>Something else we offer</h3>
-								<p>Couldent think of anything to put here...</p>
+								<h3>Other Training Materials</h3>
+								<p>Registered users will be provided links to even more training materials.</p>
 							</section>
 						</div>
 					</div>
@@ -101,6 +101,7 @@
 			</section>
 
 		<!-- Three -->
+    <!--
 			<section id="three" class="wrapper style1">
 				<div class="container">
 					<header class="major">
@@ -169,15 +170,16 @@
 					</div>
 				</div>
 			</section>
-
+      -->
 		<!-- CTA -->
+    <!--
 			<section id="cta" class="wrapper style3">
-				<h2>Sed faucibus et consequat</h2>
+				<h2>Sed</h2>
 				<ul class="actions">
 					<li><a href="#" class="button big">Get Started</a></li>
 				</ul>
 			</section>
-
+    -->
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
