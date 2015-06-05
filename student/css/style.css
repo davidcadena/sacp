@@ -7,6 +7,50 @@
 	License: pixelarity.com/license
 */
 
+/* David C's Code */
+
+	#three section {
+
+	}
+
+	.box.post i {
+		color: #FF4F37;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.box.post p {
+		color: black;
+		width: 300px;
+	}
+
+	#bodytestlesson section {
+		background-color: white;
+	}
+
+	#bodylessonspage section {
+		background-color: white;
+		border-bottom: solid grey 1px;
+	}
+
+	#eventsa {
+		color: #5674D6;
+	}
+
+	#namelesson {
+		color: #5674D6;
+	}
+
+	.headerslessonspage {
+		color: #5674D6;
+	}
+
+	#searchbar {
+		margin-left: 50%;
+	}
+
+/* End of David C's Code */
+
 /* Basic */
 
 	body {
@@ -68,7 +112,7 @@
 		color: #545454;
 		font-weight: 700;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0 0;
 		letter-spacing: -0.01em;
 	}
 
@@ -1289,7 +1333,7 @@
 			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
-	
+
 		.saex b {
 			color:white !important;
 		}
