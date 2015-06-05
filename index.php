@@ -30,7 +30,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.php">Home</a></li>
-						<li><a href="events.html">Events</a></li>
+						<li><a href="events.php">Events</a></li>
 						<li><a href="login/index.php">Log In</a></li>
 					</ul>
 				</nav>
@@ -39,10 +39,10 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<h2 style="
-							   border:1px solid transparent;
-							   border-radius:10px;
-							   " class='home_cp'><img src="images/sacyberlogo.png" height='200px'><br>SA Cyber Patriot</h2>
+
+          <!-- FIXXSXXAMEEE! -->
+
+					<h2 style="" class='home_cp'><img src="images/sacyberlogo.png" height='200px'><br>SA Cyber Patriot</h2>
 					<h3><!-- style="background-color:rgba(86,116,214,1)"San Antonio's Future Security Experts--></h3>
 				</div>
 			</section>

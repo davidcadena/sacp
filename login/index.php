@@ -26,7 +26,7 @@
 
     <!-- Header -->
       <header id="header" class="skel-layers-fixed">
-        <h1><a href="index.html">SA CyberPatriot</a></h1>
+        <h1><a href="index.php" style="color: #5674D6;">SA CyberPatriot</a></h1>
 			<nav id="nav">
 				<ul>
 					<li><a href="../index.php">Home</a></li>
@@ -65,7 +65,7 @@
 							<li><a href="#" class="button big">Reedem Access Code</a></li> <li><a href="#" class="button big">Request Access Code</a></li>
 				  </ul>
 				</div>
-					
+
             </section>
 
         </div>
