@@ -13,10 +13,13 @@
 
 	}
 
-	.box.post i {
-		color: #FF4F37;
+	.box.post p:nth-child(1) {
+		color: black;
 		font-weight: bold;
+		font-size: 25px;
 		text-align: center;
+		padding-top: 5px;
+		margin-bottom: 15px;
 	}
 
 	.box.post p {
