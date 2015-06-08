@@ -14,7 +14,7 @@
 	}
 
 	.box.post p:nth-child(1) {
-		color: black;
+		color: #545454;
 		font-weight: bold;
 		font-size: 25px;
 		text-align: center;
@@ -22,9 +22,8 @@
 		margin-bottom: 15px;
 	}
 
-	.box.post p {
+	.box.post p:nth-child(2) {
 		color: black;
-		width: 300px;
 	}
 
 	#bodytestlesson section {
@@ -36,7 +35,7 @@
 	}
 
 	#eventsa {
-		color: #5674D6;
+		color: #545454;
 	}
 
 	#namelesson {
