@@ -71,7 +71,7 @@
 	}
 
 	#eventsa {
-		color: #5674D6;
+		color: black;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1029,7 +1029,7 @@
 		.wrapper.style1.container {
 			background: white;
 		}
-		
+
 			.wrapper.style1 .box {
 				background: #ffffff;
 				border: 0;
@@ -1264,7 +1264,7 @@
 	#banner {
 		background-attachment: scroll,						fixed;
 		background-color: #494d53;
-		background-image: url("images/overlay.png"), url("../images/downtown.jpg");
+		background-image: url("images/overlay.png"), url("../images/background.gif");
 		background-position: top left,					center center;
 		background-repeat: repeat,						no-repeat;
 		background-size: auto,						cover;

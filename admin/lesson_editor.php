@@ -79,33 +79,33 @@ if (empty($vm)){
 									<h3>Edit Lesson</h3>
 									<hr />
 									<form method='post' action='action/edit_lesson.php' enctype="multipart/form-data">
-									
+
 									<input type='text' name='title' placeholder='Title' value='<?php echo $title; ?>'><br>
-									
+
 									<input type='hidden' name='id' value='<?php echo $id; ?>'>
-									
+
 									<b>Your Allowed to Use HTML Here  --  <a href='examples.html' target='_blanc'>HTML Examples</a></b>
 									<textarea name='description' rows='6' placeholder='Description of Lesson'><?php echo $description; ?></textarea>
 
 									<br>
-									
+
 									<p>(optional, .webm ONLY!) <b>Video: <input type="file" name="video"></b>
 									<br>
 									Current: <?php echo $video; ?>
 									</p>
-									
+
 									<br>
-									
+
 									<p>(optional, .zip ONLY!) <b>VM: <input type="file" name="vm"></b>
 									<br>
 									Current: <?php echo $vm; ?>
 									</p>
-									
+
 									<br>
-									
+
 									<input type='submit' class='button' value='Edit Lesson'>
 								</section>
-								
+
 
 						</section>
 
@@ -113,7 +113,7 @@ if (empty($vm)){
 			</section>
 
 		<!-- Footer -->
-			
+
 
 	</body>
 </html>

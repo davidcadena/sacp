@@ -33,7 +33,6 @@
 
 	#bodylessonspage section {
 		background-color: white;
-		border-bottom: solid grey 1px;
 	}
 
 	#eventsa {
@@ -41,11 +40,13 @@
 	}
 
 	#namelesson {
+		margin-top: -50px;
 		color: #5674D6;
 	}
 
 	.headerslessonspage {
 		color: #5674D6;
+		margin-top: -50px;
 	}
 
 	#searchbar {

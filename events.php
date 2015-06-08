@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Drift by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
--->
 <html>
 	<head>
 		<title> </title>
@@ -65,70 +60,40 @@
 						<p>Clinics, Workshops, Practice Competitions and Important Dates.</p>
 					</header>
 					<div class="row">
-						<div class="4u 6u(medium) 12u$(small)">
-							<article class="box post">
-								<h3>Rackspace Clinic</h3>
-								<i>10.12.15</i>
-								<p>We are holding a clinic at rackspace, and other info can go here...</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u 6u$(medium) 12u$(small)">
-							<article class="box post">
-								<h3>CyberPatriot Round 1</h3>
-								<p>Round 1 of CyberPatriot VIII is upon us!</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u$ 6u(medium) 12u$(small)">
-							<article class="box post">
-								<h3>Faucibus portitor</h3>
-								<p>Ipsum dolor tempus et commodo lorem accumsan et adipiscing blandit porttitor feugiat tempus lorem faucibus.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
-						<!--
-						<div class="4u 6u$(medium) 12u$(small)">
-							<article class="box post">
-								<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-								<h3>Non placerat</h3>
-								<p>Ipsum dolor tempus et commodo lorem accumsan et adipiscing blandit porttitor feugiat tempus lorem faucibus.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u 6u(medium) 12u$(small)">
-							<article class="box post">
-								<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-								<h3>Adipiscing dolor</h3>
-								<p>Ipsum dolor tempus et commodo lorem accumsan et adipiscing blandit porttitor feugiat tempus lorem faucibus.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u$ 6u$(medium) 12u$(small)">
-							<article class="box post">
-								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-								<h3>Feugiat tempus</h3>
-								<p>Ipsum dolor tempus et commodo lorem accumsan et adipiscing blandit porttitor feugiat tempus lorem faucibus.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</article>
-						</div>
-					-->
+
+						<?php
+						include_once("includes/database.php");
+
+						$stmt = $mysqli->prepare('SELECT event_id, name, location, date, description FROM events');
+						$stmt->execute();
+						$stmt->bind_result($event_id, $name, $location, $date, $raw_description);
+						$stmt->store_result();
+						while($row = $stmt->fetch()) {
+
+							$description = strip_tags(substr( $raw_description, 0, strrpos( substr( $raw_description, 0, 55), ' ' ) )) . "...";
+
+							echo "
+
+							<div class='4u 6u(medium) 12u$(small)'>
+								<article class='box post'>
+									<h3>$name</h3>
+									$date | $location
+									<p><i>$description</i><p>
+									<ul class='actions'>
+										<li><a href='event.php?id=$event_id' class='button'>Learn More</a></li>
+									</ul>
+								</article>
+							</div>
+							";
+
+						}
+
+						?>
+
 					</div>
 				</div>
 			</section>
-			
+
 
 		<!-- Footer -->
 			<footer id="footer">

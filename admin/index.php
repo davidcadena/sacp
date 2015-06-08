@@ -74,7 +74,7 @@ if ($_SESSION['user_level'] !== 'admin'){
 												<li><a href='edit_lesson.php?type=linux'>Edit Lesson</a></li>
 												<li><a href='remove_lesson.php?type=linux'>Remove Lesson</a></li>
 											</ul>
-											
+
 										</div>
 										<div class=" 6u 12u(medium)">
 											<h5>Cisco&nbsp;&nbsp;<span class='fa fa-globe'></span></h5>
@@ -90,7 +90,7 @@ if ($_SESSION['user_level'] !== 'admin'){
 												<li><a href='edit_lesson.php?type=cp_ethics'>Edit Lesson</a></li>
 												<li><a href='remove_lesson.php?type=cp_ethics'>Remove Lesson</a></li>
 											</ul>
-											
+
 										</div>
 									</div>
 									<hr />
@@ -103,20 +103,20 @@ if ($_SESSION['user_level'] !== 'admin'){
 										<li><a href='invite_admin.php'>Invite an Admin</a></li>
 										<li><a href='email_blast.php'>Email Blast</a></li>
 									</ul>
-									
+
 									<hr />
 
 									<header>
 										<h3><span class='fa fa-calendar'></span>&nbsp;&nbsp;Events</h3>
 									</header>
 									<ul>
-										<li><a href='#'>Add Event</a></li>
-										<li><a href='#'>Edit Events</a></li>
-										<li><a href='#'>Remove Events</a></li>
+										<li><a href='add_event.php'>Add Event</a></li>
+										<li><a href='edit_event.php'>Edit Events</a></li>
+										<li><a href='remove_event.php'>Remove Events</a></li>
 									</ul>
 
 								</section>
-								
+
 
 						</section>
 
@@ -124,7 +124,7 @@ if ($_SESSION['user_level'] !== 'admin'){
 			</section>
 
 		<!-- Footer -->
-			
+
 
 	</body>
 </html>
